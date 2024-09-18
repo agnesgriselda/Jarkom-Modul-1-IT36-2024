@@ -4,7 +4,7 @@ Fico Simhanandi **5027231030**
 
 Agnes Zenobia Griselda Petrina **5027231034**
 
-### Write-Up CTFd Wireshark
+## Write-Up CTFd Wireshark
 
 ## Pegawai Negeri Sebelah
 Karena mayoritas protokol menggunakan tcp, maka kita akan filter menggunakan tcp stream eq 1. Lalu kita scrolling untuk menelusuri file yang mengandung isi dari data_pns.csv. Kemudian jawab semua hint berdasarkan file csv.
@@ -25,20 +25,29 @@ Untuk mencari jawaban dari file.log, kita cari menggunakan tcp.stream eq 0. Lalu
 ![Screenshot 2024-09-18 202841](https://github.com/user-attachments/assets/89fc321c-14b6-4a7c-a792-439b388d8924)
 
 ## Corporate Breach
+Seperti biasa, kita akan filter menggunakan tcp stream. Saya mencoba-coba untuk follow salah satu nomer dengan protocol HTTP, ada beberapa yang memiliki pesan dari peretas.
 ![Screenshot 2024-09-18 202853](https://github.com/user-attachments/assets/578575cc-48e7-4356-b8ae-94836f3dcfa2)
 
+Di salah satu file HTTP, saya mencoba no 6. Muncul pesan pengirim bernama Nakhimov.
 ![Screenshot 2024-09-18 202944](https://github.com/user-attachments/assets/aae7ff68-64d8-4018-aca6-b7d54f254682)
+
+Lanjutkan menjawab semua pertanyaan hint.
 ![Screenshot 2024-09-18 202952](https://github.com/user-attachments/assets/8b2cc484-0e46-458d-ada0-28c9a7bd0a8c)
+
+Untuk email dan password peretas, saya menyadari bahwa file yang mencurigakan (yang berisi email dan password peretas) memiliki length ysng berbeda dari file yang lain(106). File lain memiliki length sekitar 90an.
 ![Screenshot 2024-09-18 204102](https://github.com/user-attachments/assets/f4d235d4-abd7-4527-8a34-e45d6b6a1d88)
 ![Screenshot 2024-09-18 204241](https://github.com/user-attachments/assets/9436bffa-5902-4e49-9fea-b221529cda70)
 
 ![Screenshot 2024-09-18 204619](https://github.com/user-attachments/assets/22e346c1-51d0-491b-91dc-048d9cf7ee47)
 
 ## Gajah Terbang (Attacker Record)
+Mengikuti soal gajah terbang server, kita akan memfilter untuk mencari file yang berisi semua info user dan product padaa file no 178 (berisi user dan password).
 ![Screenshot 2024-09-18 231039](https://github.com/user-attachments/assets/8d9d07a3-fb87-4c4c-804f-49edfa323b01)
+Lalu kita analisis berdasarkan perubahan yang dilakukan, user kunto aji melakukan perubahan user sehingga user tersebut adalah user peretas.
 ![Screenshot 2024-09-18 231409](https://github.com/user-attachments/assets/a0ded51f-9ef0-4a54-8c5b-ffe436114d49)
-
+Untuk bagian password, kita dapat melakukan hash pada password kunto aji. 
 ![Screenshot 2024-09-18 231636](https://github.com/user-attachments/assets/f06c4f6d-b924-4d41-9735-1111252a5975)
+Setelah itu kita dapat menjawab seluruh hint sesuai yang kita follow.
 ![Screenshot 2024-09-18 231940](https://github.com/user-attachments/assets/7cd6e9ef-ed7b-4e12-ba44-f082d0a1c014)
 
 ![Screenshot 2024-09-18 232633](https://github.com/user-attachments/assets/154e9282-52e7-4b5e-bef5-117694001917)
