@@ -7,8 +7,11 @@ Agnes Zenobia Griselda Petrina **5027231034**
 ### Write-Up CTFd Wireshark
 
 ## Pegawai Negeri Sebelah
-Karena mayoritas protokol menggunakan tcp, maka kita akan filter menggunakan tcp stream eq 1. Lalu kita telusuri file yang mengandung data_pns.csv. Kemudian jawab semua hint berdasarkan file csv.
+Karena mayoritas protokol menggunakan tcp, maka kita akan filter menggunakan tcp stream eq 1. Lalu kita scrolling untuk menelusuri file yang mengandung isi dari data_pns.csv. Kemudian jawab semua hint berdasarkan file csv.
+
 ![Screenshot 2024-09-18 195558](https://github.com/user-attachments/assets/01a6ec8a-a85c-4d08-a0dc-af129393810f)
+
+bisa gunakan fitur find, untuk mencari password yang ditanyakan.
 ![Screenshot 2024-09-18 195701](https://github.com/user-attachments/assets/6990e7bf-1c00-4ac1-b783-1f3e649f9446)
 ![Screenshot 2024-09-18 195723](https://github.com/user-attachments/assets/35fb8ddd-6d7c-4059-9269-2169c6bcb9db)
 ![Screenshot 2024-09-18 195741](https://github.com/user-attachments/assets/d96c2012-1b02-4922-ab32-4e5e24832774)
@@ -30,4 +33,15 @@ Untuk mencari jawaban dari file.log, kita cari menggunakan tcp.stream eq 0. Lalu
 ![Screenshot 2024-09-18 204241](https://github.com/user-attachments/assets/9436bffa-5902-4e49-9fea-b221529cda70)
 
 ![Screenshot 2024-09-18 204619](https://github.com/user-attachments/assets/22e346c1-51d0-491b-91dc-048d9cf7ee47)
+
+## Gajah Terbang (Attacker Record)
+![Screenshot 2024-09-18 231039](https://github.com/user-attachments/assets/8d9d07a3-fb87-4c4c-804f-49edfa323b01)
+![Screenshot 2024-09-18 231409](https://github.com/user-attachments/assets/a0ded51f-9ef0-4a54-8c5b-ffe436114d49)
+
+![Screenshot 2024-09-18 231636](https://github.com/user-attachments/assets/f06c4f6d-b924-4d41-9735-1111252a5975)
+![Screenshot 2024-09-18 231940](https://github.com/user-attachments/assets/7cd6e9ef-ed7b-4e12-ba44-f082d0a1c014)
+
+![Screenshot 2024-09-18 232633](https://github.com/user-attachments/assets/154e9282-52e7-4b5e-bef5-117694001917)
+![image](https://github.com/user-attachments/assets/a9674e5e-d87f-496e-b0ab-d85679e55402)
+
 
