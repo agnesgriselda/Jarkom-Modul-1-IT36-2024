@@ -6,7 +6,7 @@ Agnes Zenobia Griselda Petrina **5027231034**
 
 ## Write-Up CTFd Wireshark
 
-## Pegawai Negeri Sebelah
+## Pegawai Negeri Sebelah (nc 10.15.42.60 53000)
 Karena mayoritas protokol menggunakan tcp, maka kita akan filter menggunakan tcp stream eq 1. Lalu kita scrolling untuk menelusuri file yang mengandung isi dari data_pns.csv. Kemudian jawab semua hint berdasarkan file csv.
 
 ![Screenshot 2024-09-18 195558](https://github.com/user-attachments/assets/01a6ec8a-a85c-4d08-a0dc-af129393810f)
@@ -22,7 +22,7 @@ bisa gunakan fitur find, untuk mencari password yang ditanyakan.
 ![Screenshot 2024-09-18 195803](https://github.com/user-attachments/assets/4373d8a4-e087-467f-b8f6-56fa7b6a5bfd)
 
 
-## EZ
+## EZ (nc 10.15.42.60 54000)
 Untuk mencari jawaban dari file.log, kita cari menggunakan tcp.stream eq 0. Lalu saya coba scrolling untuk mencari sesuatu yang suspicious, lalu saya mencoba follow di nomer 638. Kemudian saya menemukan jawaban dari log tersebut. Setelah memasukkan jawaban dari log, saya menemukan portnya yaitu 1234.
 
 ![Screenshot 2024-09-18 201052](https://github.com/user-attachments/assets/32513fe6-2e07-43ca-bf64-42ddc42ae291)
@@ -34,7 +34,7 @@ Untuk mencari jawaban dari file.log, kita cari menggunakan tcp.stream eq 0. Lalu
 ![Screenshot 2024-09-18 202841](https://github.com/user-attachments/assets/89fc321c-14b6-4a7c-a792-439b388d8924)
 
 
-## Corporate Breach
+## Corporate Breach (nc 10.15.42.60 51000)
 Seperti biasa, kita akan filter menggunakan tcp stream. Saya mencoba-coba untuk follow salah satu nomer dengan protocol HTTP, ada beberapa yang memiliki pesan dari peretas.
 
 ![Screenshot 2024-09-18 202853](https://github.com/user-attachments/assets/578575cc-48e7-4356-b8ae-94836f3dcfa2)
@@ -54,7 +54,7 @@ Untuk email dan password peretas, saya menyadari bahwa file yang mencurigakan (y
 
 ![Screenshot 2024-09-18 204619](https://github.com/user-attachments/assets/22e346c1-51d0-491b-91dc-048d9cf7ee47)
 
-## Gajah Terbang (Attacker Record)
+## Gajah Terbang (Attacker RecoN) (nc 10.15.42.60 62000)
 
 Mengikuti soal gajah terbang server, kita akan memfilter untuk mencari file yang berisi semua info user dan product padaa file no 178 (berisi user dan password).
 
