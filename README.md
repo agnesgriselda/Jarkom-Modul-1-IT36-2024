@@ -76,3 +76,169 @@ Setelah itu kita dapat menjawab seluruh hint sesuai yang kita follow. Seperti ya
 
 ![image](https://github.com/user-attachments/assets/a9674e5e-d87f-496e-b0ab-d85679e55402)
 
+
+## Advance Sanity Check
+
+Unutk soal ini kita dapat melakukan Follow TCP Stream dan kita menemukan bagian yang cukup menjanjikan dan kita masukan sebagai jawaban
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/sanity0.png)
+
+Kita dapat menemukan filename dengan mencari String "file"
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/sanity2.png)
+
+Lalu kita melihat clue yang ada di follow stream tadi yang menyuruh kita ke peraturan soal jarkom dan terdapat tulisan base64 yang didecode menjadi penword dan kita dapat flagnya
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/4.png)
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/sanity.png)
+
+
+## Illegal Breakthrough
+
+
+Untuk kebanyakan jawaban dapat ditemukan di stream ke 1917 atau stream dimana attacker berhasil menembus system
+
+Ip dapat dilihat dengan jelas diawal
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/illegal1.png)
+
+Kredensial lain dapat dilihat di stream
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/illegal2.png)
+
+Untuk username dan password bisa ditemukan menggunakan ctrl+f dengan search string atau menggunakan stream tadi
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/illegal3.png)
+
+
+## Package Barrage
+
+
+Sama halnya seperti Illegal Breakthrough mayoritas jawaban dapat ditemukan lewat stream 1917
+
+Untuk port dapat dilihat di awal
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/barrage1.png)
+
+Untuk bruteforce kita asumsikan bahwa membutuhkan waktu lama untuk hacker menembus sehingga kita langsung melihat stream yang akhir dan menemukan bahwa attacker telah brute force sebanyak 1917 kali
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/barrage2.png)
+
+Untuk jawaban selanjutnya kita bisa lihat di stream selanjutnya dan scroll kebawah untuk menemukan .txt dan isinya
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/barrage3.png)
+
+
+## FTP Login
+
+
+Untuk bagian ini cukup mudah yakni dengan follow TCP stream dan semua jawaban akan muncul di stream ke 4
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/ftp1.png)
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/ftp2.png)
+
+
+## Surprise
+
+
+Ini cukup simpel juga yaitu jawaban hampir semua ada di stream yang sama yakni 4, dan untuk jawaban terakhir kita dapat menjalankan code g0tcha.cpp yang diberikan (kita dapat mengambil menggunakan ekstrak maupun langsung copas dari stream 5)
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/ftp1.png)
+
+Hasil menjalankan g0tcha.cpp
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/surprise.png)
+
+
+## Rizzset
+
+Bagian ini untuk domain dapat kita dapatkan dari meng-follow stream UDP dan mendapatkan website its
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/rizz1.png)
+
+Ip kita dapatkan dari melihat source/destination
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/rizz2.png)
+
+Untuk bagian ini kita menggunakan bantuan jarm.py yang didownload dari internet
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/rizz3.png)
+
+Memasukan hasil fingerprint sebagai jawaban
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/rizz4.png)
+
+
+## Gajah Terbang (Server Recon)
+
+Untuk bagian ini, kita dapat melihat kebanyakan dari jawaban di stream TCP ke 9 dan untuk jawaban mengenai PORT dapat dilihat di bagian info
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/gajah1.png)
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/gajah2.png)
+
+Kresendial dari user dan database dapat dilihat dibagian atas stream
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/gajah3.png)
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/gajah4.png)
+
+Terakhir untuk password kita perlu untuk mendecrypt terlebih dahulu dengan MD5
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/gajah5.png)
+
+
+## Malicious code
+
+Untuk Malicious Code kita memakai cara brute force untuk jawaban pertama dan kita menemukan juga stream (54) yang berisi jawaban kedua juga
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/malicious1.png)
+
+Untuk bagian ini kita mengasumsikan bahwa bagian dekat akhir merupakan bagian hacker berhasil masuk ke system dan disini terdapat perhitungan yang salah seharusnya 163 attempt bukan 153
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/malicious2.png)
+
+Bagian akhir kita mendecrypt kode ASCII yang diberi oleh hacker dan menebak dengan brute force warna-warna yang ada
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/malicious3.png)
+
+
+## Stegography
+
+Kita dapat melihat terdapat beberapa stream yang memiliki STOR .jpg, sehingga kita dapat menggunakan filter 'frame contains "jpg"' untuk mengambil semua gambar yang ada
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/stego1.png)
+
+Kita juga menemukan file python di stream yang dimana itu merupakan code yang dapat menekstrak tulisan rahasia dari gambar
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/stego2.png)
+
+Menggabungkan dan membalik kata-kata tersebut memberikan kita jawaban terakhir
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/stego3.png)
+
+
+## 22 Nightmare
+
+Untuk 22 Nightmare terdapat 2 stream yang menarik yaitu stream yang berada di awal dan juga di 141 karena mereka berdua memberikan jpg dan juga .py
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/night1.png)
+
+Saat file didownload maka inilah hasilnya
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/night2.png)
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/night3.png)
+
+Terdapat hint untuk apa yang harus dilakukan di file.py tadi yaitu berupa XOR decrypt
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/night4.png)
+
+Terakhir kita melakukan XOR decrypt dengan value angka panjang yang diberikan dan key merupakan hasil BINARY dari tulisan NUN
+
+![github-small](https://github.com/PuroFuro/image_for_jarkom/tree/main/ss_jawaban/night5.png)
+
+
+
