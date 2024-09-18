@@ -68,7 +68,7 @@ Untuk bagian password, kita dapat melakukan hash pada password kunto aji.
 
 ![Screenshot 2024-09-18 231636](https://github.com/user-attachments/assets/f06c4f6d-b924-4d41-9735-1111252a5975)
 
-Setelah itu kita dapat menjawab seluruh hint sesuai yang kita follow.
+Setelah itu kita dapat menjawab seluruh hint sesuai yang kita follow. Seperti yang sebelumnya saya banyak menggunakan fitur coba-coba.
 
 ![Screenshot 2024-09-18 231940](https://github.com/user-attachments/assets/7cd6e9ef-ed7b-4e12-ba44-f082d0a1c014)
 
