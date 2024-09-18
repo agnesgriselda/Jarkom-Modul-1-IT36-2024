@@ -54,7 +54,7 @@ Untuk email dan password peretas, saya menyadari bahwa file yang mencurigakan (y
 
 ![Screenshot 2024-09-18 204619](https://github.com/user-attachments/assets/22e346c1-51d0-491b-91dc-048d9cf7ee47)
 
-## Gajah Terbang (Attacker RecoN) (nc 10.15.42.60 62000)
+## Gajah Terbang (Attacker Recon) (nc 10.15.42.60 62000)
 
 Mengikuti soal gajah terbang server, kita akan memfilter untuk mencari file yang berisi semua info user dan product padaa file no 178 (berisi user dan password).
 
