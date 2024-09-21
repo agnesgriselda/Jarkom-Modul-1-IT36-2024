@@ -198,7 +198,7 @@ Untuk bagian ini, kita dapat melihat kebanyakan dari jawaban di stream TCP ke 9 
 ![gajah2](https://github.com/user-attachments/assets/657048ed-1ff7-4bcf-9124-2fee2c2f1e12)
 
 
-Kresendial dari user dan database dapat dilihat dibagian atas stream
+Kredensial dari user dan database dapat dilihat dibagian atas stream
 
 ![gajah3](https://github.com/user-attachments/assets/0c21c5b7-a001-408d-8ceb-b9857d3d5b48)
 
@@ -250,7 +250,7 @@ Menggabungkan dan membalik kata-kata tersebut memberikan kita jawaban terakhir
 
 ## 22 Nightmare
 
-Untuk 22 Nightmare terdapat 2 stream yang menarik yaitu stream yang berada di awal dan juga di 141 karena mereka berdua memberikan jpg dan juga .py
+Untuk 22 Nightmare terdapat 2 stream yang menarik yaitu stream yang berada di awal dan juga di 141 dan mereka berdua memberikan jpg dan juga .py
 
 ![night1](https://github.com/user-attachments/assets/dcd5fbcf-a015-4b36-ac8b-585d00e5af8a)
 
