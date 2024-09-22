@@ -274,6 +274,7 @@ Terakhir kita melakukan XOR decrypt dengan value angka panjang yang diberikan da
 
 
 # REVISI
+
 ## InneRCE
 
 Pada challenge ini, saya scrolling untuk mencari hint pertama yaitu tanggal peretas berhasil masuk ke server, yaitu pada stream 55.
@@ -281,14 +282,17 @@ Pada challenge ini, saya scrolling untuk mencari hint pertama yaitu tanggal pere
 ![Screenshot 2024-09-22 174811](https://github.com/user-attachments/assets/fcbe62d2-3e5c-464b-9295-1511fd09acff)
 
 Untuk hint selanjutnya, saya juga melakukan brute force sampai menemukan server_app pada stream 27.
+
 ![Screenshot 2024-09-22 175609](https://github.com/user-attachments/assets/a4e8bfb8-ec35-4ffd-aa67-3eb703688127)
 
 ![Screenshot 2024-09-22 175620](https://github.com/user-attachments/assets/4385ff64-cec6-4e9f-836f-1c545c3411c8)
 
-Untuk hint berikut kita harus melakukan decode ke base64 untuk membaca pesan yang dikirim,
+Untuk hint berikut kita harus melakukan decode ke base64 untuk membaca pesan yang dikirim.
+
 ![Screenshot 2024-09-22 175703](https://github.com/user-attachments/assets/53d2ac0e-cd25-4e26-8d70-3f95b70bff65)
 
 lanjutkan untuk hint lainnya, dan saya pun mendapatkan flagnya.
+
 ![Screenshot 2024-09-22 175723](https://github.com/user-attachments/assets/f6b189ed-e1ed-454a-a6d2-5b1782950588)
 
 
@@ -317,3 +321,24 @@ Untuk menjawab hint kedua, kita menggunakan bantuan USB Mouse pcap Visualizer un
 Masukkan semua hint ke terminal untuk mendapatkan flagnya.
 
 ![Screenshot 2024-09-22 221642](https://github.com/user-attachments/assets/1ca421a7-fb01-41fb-a783-37a716f6e946)
+
+## Simba
+
+Untuk menjawab hint pertama dari challenge ini, saya mencoba semua protocol yang ada seperti TCP, UDP, FTP, lalu yang benar adalah SMB.
+
+![Screenshot 2024-09-22 224905](https://github.com/user-attachments/assets/8365f184-976b-4007-b0c8-786a55d26933)
+
+Untuk hint yang kedua, saya melakukan filter untuk protocol SMB dan melakukan scrolling untuk menemukan user yang compromise. Pada packets no 8376 terdapat user dan domain yang saya cari.
+
+![Screenshot 2024-09-22 225604](https://github.com/user-attachments/assets/4cfaf59c-407a-4ba1-82c2-056b77f5e107)
+
+Untuk menjawab hint terkahir yaitu berapa file yang berhasil terleak, saya menggunakan Export SMB Objects untuk menghitungnya (abaikan packets yang berukuran 0 bytes).
+
+![Screenshot 2024-09-22 225759](https://github.com/user-attachments/assets/88ebf571-a813-4539-97cf-ddf0c8535c97)
+
+Masukkan semua hint, lalu saya mendapatkan flagnya.
+
+![Screenshot 2024-09-22 225841](https://github.com/user-attachments/assets/9fd42312-822c-49fb-b8b6-f5fffeb61f84)
+
+
+
