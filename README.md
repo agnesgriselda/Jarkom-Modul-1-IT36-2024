@@ -273,5 +273,25 @@ Terakhir kita melakukan XOR decrypt dengan value angka panjang yang diberikan da
 ![night5](https://github.com/user-attachments/assets/8bd5a8d5-30a4-40b1-bd30-f1dd702e62cf)
 
 
+# REVISI
+## InnerCE
+
+Pada challenge ini, saya scrolling untuk mencari hint pertama yaitu tanggal peretas berhasil masuk ke server, yaitu pada stream 55.
+
+![Screenshot 2024-09-22 174811](https://github.com/user-attachments/assets/fcbe62d2-3e5c-464b-9295-1511fd09acff)
+
+Untuk hint selanjutnya, saya juga melakukan brute force sampai menemukan server_app pada stream 27.
+![Screenshot 2024-09-22 175609](https://github.com/user-attachments/assets/a4e8bfb8-ec35-4ffd-aa67-3eb703688127)
+
+![Screenshot 2024-09-22 175620](https://github.com/user-attachments/assets/4385ff64-cec6-4e9f-836f-1c545c3411c8)
+
+Untuk hint berikut kita harus melakukan decode ke base64 untuk membaca pesan yang dikirim,
+![Screenshot 2024-09-22 175703](https://github.com/user-attachments/assets/53d2ac0e-cd25-4e26-8d70-3f95b70bff65)
+
+lanjutkan untuk hint lainnya, dan saya pun mendapatkan flagnya.
+![Screenshot 2024-09-22 175723](https://github.com/user-attachments/assets/f6b189ed-e1ed-454a-a6d2-5b1782950588)
+
+
+
 
 
