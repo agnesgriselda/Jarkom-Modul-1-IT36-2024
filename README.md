@@ -304,4 +304,16 @@ keystroke yang didapat adalah "ini password wifinya apa ya?" tapi salah. Yang be
 ![Screenshot 2024-09-22 200028](https://github.com/user-attachments/assets/0698e7c1-1b09-492f-8a79-1dcbd3bb9e39)
 
 
+## Adult Hengker
+Untuk challenge ini, kita buka pada stream kedua. Di bagian DEVICE DESCRIPTOR ada keterangan device yang digunakan, yaitu Mouse.
+![Screenshot 2024-09-22 220519](https://github.com/user-attachments/assets/dbbdb579-1268-44ed-b527-4d8b7ec69957)
 
+Untuk menjawab hint kedua, kita menggunakan bantuan USB Mouse pcap Visualizer untuk menerjemahkan gerakan dari mouse tersebut. Dan didapatkan kalimat :
+
+```HALO MAS KEVIN SALKEN```
+
+![Screenshot 2024-09-22 221058](https://github.com/user-attachments/assets/8734f725-f966-4060-8158-21f87898384c)
+
+Masukkan semua hint ke terminal untuk mendapatkan flagnya.
+
+![Screenshot 2024-09-22 221642](https://github.com/user-attachments/assets/1ca421a7-fb01-41fb-a783-37a716f6e946)
