@@ -274,7 +274,7 @@ Terakhir kita melakukan XOR decrypt dengan value angka panjang yang diberikan da
 
 
 # REVISI
-## InnerCE
+## InneRCE
 
 Pada challenge ini, saya scrolling untuk mencari hint pertama yaitu tanggal peretas berhasil masuk ke server, yaitu pada stream 55.
 
@@ -292,6 +292,16 @@ lanjutkan untuk hint lainnya, dan saya pun mendapatkan flagnya.
 ![Screenshot 2024-09-22 175723](https://github.com/user-attachments/assets/f6b189ed-e1ed-454a-a6d2-5b1782950588)
 
 
+## Baby Hengker
+Untuk challenge ini kita buka pada stream no 7, untuk mengetahui waktu berhasilnya sistem diakses oleh peretas.
+![Screenshot 2024-09-22 195620](https://github.com/user-attachments/assets/d16dcf71-bc6e-4d14-965b-abeb77a59eac)
+
+Untuk menyelesaikan hint selanjutnya kita harus memasukan file .pcap ke script python untuk mendapat hasil keystroke.
+![Screenshot 2024-09-22 195604](https://github.com/user-attachments/assets/42ac2e2e-681f-487f-ba36-82a798386513)
+
+keystroke yang didapat adalah "ini password wifinya apa ya?" tapi salah. Yang benar adalah "ini passwordnya apa ya?", lalu saya berhasil mendapatkan flagnya.
+
+![Screenshot 2024-09-22 200028](https://github.com/user-attachments/assets/0698e7c1-1b09-492f-8a79-1dcbd3bb9e39)
 
 
 
